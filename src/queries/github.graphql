@@ -1,0 +1,15 @@
+{
+  viewer {
+    repositories(
+      privacy: PUBLIC
+      affiliations: OWNER
+      isFork: false
+      first: 100
+    ) {
+      nodes {
+        name
+        url
+      }
+    }
+  }
+}
