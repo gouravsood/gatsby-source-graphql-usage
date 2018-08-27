@@ -22,7 +22,7 @@ export default  ({ data }) => {
         <h2>GitHub Repositories</h2>
         <ul>
           {
-            data.repositories.nodes.map(repository => (
+            data.githubGraphQl.viewer.repositories.nodes.map(repository => (
               <li>{repository.name} : {repository.url}</li>
             ))
           }
@@ -33,11 +33,13 @@ export default  ({ data }) => {
 
 export const query = graphql`
 query RepositoriesQuery {
-  viewer {
-    repositories(privacy: PUBLIC, affiliations: OWNER, isFork: false, first: 100) {
-      nodes {
-        name
-        url
+  githubGraphQl {
+    viewer {
+      repositories {
+        nodes {
+          name
+          url
+        }
       }
     }
   }
