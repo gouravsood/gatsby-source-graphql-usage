@@ -13,12 +13,14 @@ const IndexPage = () => (
 export default IndexPage
  */
 
- import React from "react";
+import React from "react";
+import Link from 'gatsby-link';
 
 export default  ({ data }) => {
     console.log(data);
     return (
       <div>
+        <Link to="/page-2/">Page 2</Link>
         <h2>GitHub Repositories</h2>
         <ul>
           {
