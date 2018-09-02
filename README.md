@@ -14,7 +14,7 @@ This sample project has been created to showcase how one can integrate another G
 1.  **Clone this repo.**
 
     ```sh
-    npm clone https://github.com/gouravsood/gatsby-source-graphql-usage
+    git clone https://github.com/gouravsood/gatsby-source-graphql-usage
     ```
 
 2.  **Install the dependencies**
